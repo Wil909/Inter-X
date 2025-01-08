@@ -90,7 +90,7 @@ if __name__ == '__main__':
     os.makedirs(opt.animation_dir, exist_ok=True)
 
     if opt.dataset_name == 't2m':
-        opt.data_root = './dataset/HumanML3D'
+        opt.data_root = './datasets/HumanML3D'
         opt.motion_dir = pjoin(opt.data_root, 'new_joint_vecs')
         opt.text_dir = pjoin(opt.data_root, 'texts')
         opt.joints_num = 22
@@ -106,7 +106,7 @@ if __name__ == '__main__':
         split_file = pjoin(opt.data_root, opt.split_file)
         opt.max_motion_length = 196
     elif opt.dataset_name == 'hhi':
-        opt.data_root = './dataset/inter-x'
+        opt.data_root = './datasets/inter-x'
         opt.motion_dir = pjoin(opt.data_root, 'motions')
         opt.text_dir = pjoin(opt.data_root, 'texts_processed')
         opt.joints_num = 56

@@ -26,7 +26,7 @@ if __name__ == '__main__':
     opt.model_dir = pjoin(opt.save_root, 'model')
 
     if opt.dataset_name == 't2m':
-        opt.data_root = './dataset/HumanML3D'
+        opt.data_root = './datasets/HumanML3D'
         opt.motion_dir = pjoin(opt.data_root, 'new_joint_vecs')
         opt.text_dir = pjoin(opt.data_root, 'texts')
         opt.joints_num = 22

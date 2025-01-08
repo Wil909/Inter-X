@@ -43,8 +43,8 @@ def mean_variance(data_dir, save_dir, joints_num):
 
 
 if __name__ == '__main__':
-    data_dir = '../dataset/kit_mocap_dataset/new_joint_vecs/'
-    save_dir = '../dataset/kit_mocap_dataset/'
+    data_dir = '../datasets/kit_mocap_dataset/new_joint_vecs/'
+    save_dir = '../datasets/kit_mocap_dataset/'
     mean, Std = mean_variance(data_dir, save_dir, 21)
     print(mean)
     print(Std)

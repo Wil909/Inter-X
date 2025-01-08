@@ -430,9 +430,9 @@ if __name__ == "__main__":
     r_hip, l_hip = 2, 1
     joints_num = 22
     # ds_num = 8
-    data_dir = '../dataset/pose_data_raw/joints/'
-    save_dir1 = '../dataset/pose_data_raw/new_joints/'
-    save_dir2 = '../dataset/pose_data_raw/new_joint_vecs/'
+    data_dir = '../datasets/pose_data_raw/joints/'
+    save_dir1 = '../datasets/pose_data_raw/new_joints/'
+    save_dir2 = '../datasets/pose_data_raw/new_joint_vecs/'
 
     n_raw_offsets = torch.from_numpy(t2m_raw_offsets)
     kinematic_chain = t2m_kinematic_chain
@@ -476,9 +476,9 @@ if __name__ == "__main__":
     r_hip, l_hip = 11, 16
     joints_num = 21
     # ds_num = 8
-    data_dir = '../dataset/kit_mocap_dataset/joints/'
-    save_dir1 = '../dataset/kit_mocap_dataset/new_joints/'
-    save_dir2 = '../dataset/kit_mocap_dataset/new_joint_vecs/'
+    data_dir = '../datasets/kit_mocap_dataset/joints/'
+    save_dir1 = '../datasets/kit_mocap_dataset/new_joints/'
+    save_dir2 = '../datasets/kit_mocap_dataset/new_joint_vecs/'
 
     n_raw_offsets = torch.from_numpy(kit_raw_offsets)
     kinematic_chain = kit_kinematic_chain

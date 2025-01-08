@@ -29,7 +29,7 @@ C.update_conf({'window_width': width*0.9, 'window_height': height*0.9})
 C.update_conf({'smplx_models':'./body_models'})
 
 # Use software rendering instead of OpenGL
-os.environ["PYOPENGL_PLATFORM"] = "osmesa"
+os.environ["PYOPENGL_PLATFORM"] = "egl"
 
 
 class SMPLX_Viewer(Viewer):
@@ -204,7 +204,7 @@ class SMPLX_Viewer(Viewer):
 
 if __name__=='__main__':
 
-    viewer=SMPLX_Viewer()
+    viewer=SMPLX_Viewer(samples=32)
     viewer.scene.fps=120
     viewer.playback_fps=120
     viewer.run()

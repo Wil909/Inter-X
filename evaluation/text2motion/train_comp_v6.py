@@ -101,7 +101,7 @@ if __name__ == '__main__':
     os.makedirs(opt.log_dir, exist_ok=True)
 
     if opt.dataset_name == 't2m':
-        opt.data_root = './dataset/HumanML3D'
+        opt.data_root = './datasets/HumanML3D'
         opt.motion_dir = pjoin(opt.data_root, 'new_joint_vecs')
         opt.text_dir = pjoin(opt.data_root, 'texts')
         opt.joints_num = 22
@@ -111,7 +111,7 @@ if __name__ == '__main__':
         dim_pose = 263
         kinematic_chain = paramUtil.t2m_kinematic_chain
     elif opt.dataset_name == 'kit':
-        opt.data_root = './dataset/KIT-ML'
+        opt.data_root = './datasets/KIT-ML'
         opt.motion_dir = pjoin(opt.data_root, 'new_joint_vecs')
         opt.text_dir = pjoin(opt.data_root, 'texts')
         opt.joints_num = 21
@@ -121,7 +121,7 @@ if __name__ == '__main__':
         opt.max_motion_length = 196
         kinematic_chain = paramUtil.kit_kinematic_chain
     elif opt.dataset_name == 'hhi':
-        opt.data_root = './dataset/inter-x'
+        opt.data_root = './datasets/inter-x'
         opt.motion_dir = pjoin(opt.data_root, 'motions')
         opt.text_dir = pjoin(opt.data_root, 'texts_processed')
         opt.joints_num = 56
